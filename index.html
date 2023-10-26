@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="presentacion/style.css">
+    <title>formulario de registro e inicio de sesion</title>
+</head>
+
+<body>
+    <div class="container-form register">
+        <div class="information">
+            <div class="info-childs">
+                <h2 class="welcome">Bienvenidos</h2>
+                <p>Para unirte por favor ingresa tus datos</p>
+                <input type="button" value="Iniciar sesión" id="sign-in">
+            </div>
+        </div>
+        <div class="form-informacion">
+            <div class="form-information-childs">
+                <h2>Crea una Cuenta</h2>
+                <div class="icons">
+                    <a href="https://youtu.be/IcSnM8eBgUg?t=19" target="_blank" title="Ver video de YouTube">
+                        <i class='bx bxl-google' id="google-icon"></i>
+                    </a>
+                    <a href="https://github.com/HustavoJhon" target="_blank" title="XD">
+                        <i class='bx bxl-github' id="github-icon"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/universidadsideralcarrion/" target="_blank"
+                        title="Sideral Carrion">
+                        <i class='bx bxl-linkedin' id="linkedin-icon"></i>
+                    </a>
+                </div>
+                <p>o usa tu gmail para registrate</p>
+                <form class="form" action="datos/registro_usuario.php" method="POST">
+                    <label>
+                        <i class='bx bx-user'></i>
+                        <input type="text" placeholder="Nombre Completo" name="nombre_completo">
+                    </label>
+                    <label>
+                        <i class='bx bx-envelope'></i>
+                        <input type="email" placeholder="Correo Electronico" name="email">
+                    </label>
+                    <label>
+                        <i class='bx bx-lock-alt'></i>
+                        <input type="password" placeholder="Contraseña" name="contrasena">
+                    </label>
+                    <label style="padding: 0px; border: 2px solid #333;">
+                        <input style="font-weight: bold; background-color: rgb(229, 255, 0); cursor: pointer;" type="submit" value="registrarse">
+                    </label>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-form login hide">
+        <div class="information">
+            <div class="info-childs">
+                <h2>Bienvenidos Nuevamente</h2>
+                <p>Para unirte por favor ingresa tus datos</p>
+                <input type="button" value="Registrarte" id="sign-up">
+            </div>
+        </div>
+        <div class="form-informacion">
+            <div class="form-information-childs">
+                <h2>Iniciar sesion</h2>
+                <div class="icons">
+                    <a href="https://youtu.be/IcSnM8eBgUg?t=19" target="_blank" title="Ver video de YouTube">
+                        <i class='bx bxl-google' id="google-icon"></i>
+                    </a>
+                    <a href="https://github.com/HustavoJhon" target="_blank" title="XD">
+                        <i class='bx bxl-github' id="github-icon"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/universidadsideralcarrion/" target="_blank"
+                        title="Sideral Carrion">
+                        <i class='bx bxl-linkedin' id="linkedin-icon"></i>
+                    </a>
+                </div>
+                <p>o usa tu gmail para registrate</p>
+                <form class="form" action="datos/login_usuario.php" method="POST">
+                    <label>
+                        <i class='bx bx-envelope'></i>
+                        <input type="email" placeholder="Correo Electronico" name="email">
+                    </label>
+                    <label>
+                        <i class='bx bx-lock-alt'></i>
+                        <input type="password" placeholder="Contraseña" name="contrasena">
+                    </label>
+                    <label style="padding: 0px; border: 2px solid #333;">
+                        <input src="wl" type="submit" style="font-weight: bold; background-color: rgb(251, 255, 0);cursor: pointer;" value="Iniciar Sesion">
+                    </label>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="presentacion/scrip.js"></script>
+</body>
+
+</html>
